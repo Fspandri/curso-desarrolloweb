@@ -24,20 +24,26 @@ h1{
     margin-bottom: 15px;
     font-family:'Gloria Hallelujah', cursive;
     color: #8F3985;
-    font-size: 1.3cm;
+    font-size: 40px;
+    text-align: center;
 }
 
 h2{
     margin-bottom: 20px;
 }
 
+/* ***** LINKS ***** */
+
+a{
+    text-decoration: none;
+}
+
 
 /* ***** MENU NAV ***** */
 
 header{
-    background-color: #07BEB8;
-    display: flex;
-    justify-content: space-between;
+    background-color: #EFD9CE;
+    
 }
 
 li{
@@ -45,13 +51,8 @@ li{
     display: inline-block;
 }
 
-.menu{
-    padding-bottom: 10px;
-}
-
 .menu a{
     color: #25283D;
-    text-transform: uppercase;
     text-decoration: none;
     font-weight: bold;
     margin: 20px 20px;
@@ -63,17 +64,29 @@ p{
 }
 
 .logo {
-    height: 170px
+    height: 100px;
+    margin-left: 20px
 }
+
+.botonBusqueda {
+    background-color: #07beb8e0;
+    color: white;
+    border: none;
+}
+
+.botonBusqueda:hover {
+    background-color: #07beb89a;
+    color: white; 
+}
+
 
 /* ***** FOOTER ***** */
 
 footer{
     text-align: center;
     padding: 10px 0px;
-    margin: 20px 30%;
-    border-top: 1px solid #25283D;
-    font-size: x-small;
+    font-size: small;
+    background-color: #EFD9CE;
 }
 
 .redes{
@@ -87,8 +100,8 @@ footer{
 }
 
 .redes_icono {
-    width: 20px;
-    height: 20px;
+    width: 50px;
+    height: 50px;
 }
 
 
@@ -111,26 +124,11 @@ footer{
 
 /* ***** CONTACTO ***** */
 
-.formulario {
-    margin-left: 30px;
-    width: 30%;
-    height: 280px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
+.diseño_formulario {
+padding: 20px;
+border: 3px solid #07BEB8;
+border-radius: 20px;
 
-.formulario_item {
-    display: flex;
-    justify-content: space-between;
-}
-
-.formulario_item input {
-    width: 60%;
-}
-
-textarea{
-    width: 100%;
 }
 
 /* ***** SUCURSALES ***** */
@@ -151,10 +149,26 @@ textarea{
     justify-content: space-around;
 }
 
-.mainImagenes{
-    width: 300px;
-    height: 270px;
-    margin: 10px;
+.carousel_main{
+    width: 95%;
 }
 
+/* ***** RESPONSIVE ***** */
+
+.mostrar_responsive{
+    display: none;
+}
+
+@media screen and (min-width: 576px) {
+
+    .mostrar_responsive{
+        display: block;
+    }
+    
+    .redes_icono {
+        width: 20px;
+        height: 20px;
+    }
+
+}
 

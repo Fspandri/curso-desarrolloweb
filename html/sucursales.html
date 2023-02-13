@@ -6,25 +6,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bon Voyage</title>
 
+    <!-- CSS Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
     <!-- CCS -->
     <link rel="stylesheet" href="../css/estilo.css">
+
 </head>
+
 <body>
     <header>
-        <div>
-            <a href="../index.html"><h1>Bon Voyage</h1></a>
+        
+        <!-- MENU BOOTSTRAP -->
 
-            <!-- MENU -->
-            <nav class="menu">
-                <ul>
-                    <li><a href="quienesSomos.html">Quienes Somos</a></li>
-                    <li><a href="paquetes.html">Paquetes</a></li>
-                    <li><a href="sucursales.html">Sucursales</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>
-                </ul>
-            </nav>
-        </div>
-        <img class="logo" src="../img/inicio/logo.png" alt="Logo">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html"><img src="../img/inicio/logo.png" class="logo" alt="Logo de Bon Voyage"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse me-4" id="navbarSupportedContent">
+                    <ul class="navbar-nav menu">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../html/quienessomos.html">Quienes
+                                Somos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../html/paquetes.html">Paquetes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../html/sucursales.html">Sucursales</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../html/contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                        <button class="btn botonBusqueda" type="submit">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+
+
     </header>
 
     <main>
@@ -48,37 +81,52 @@
     </main>
 
     <footer>
-        <h3>Todos los derechos reservados.</h3>
-
+        
         <!-- REDES -->
-
-        <div class="redes">
+        
+        <div class="redes d-flex justify-content-center">
             <!-- WhatsApp -->
-            <a  class="redes_link" href="https://web.whatsapp.com/">
-                <img class="redes_icono" src="../img/inicio/whatsapp.png" alt="Icono WhatsApp">
-                WhatsApp
+            <a class="redes_link" href="https://web.whatsapp.com/" target="_blank">
+                <div class="d-flex">
+                    <img class="redes_icono" src="../img/inicio/whatsapp.png" alt="Icono WhatsApp">
+                    <p class="mostrar_responsive ms-1">WhatsApp</p>
+                </div>
             </a>
-    
+            
             <!-- Instagram -->
-            <a  class="redes_link" href="https://www.instagram.com/">
-                <img class="redes_icono" src="../img/inicio/instagram.png" alt="Icono Instagram">
-                Instagram
+            <a class="redes_link" href="https://www.instagram.com/" target="_blank">
+                <div class="d-flex">
+                    <img class="redes_icono" src="../img/inicio/instagram.png" alt="Icono Instagram">
+                    <p class="mostrar_responsive ms-1">Instagram</p>
+                </div>
             </a>
-    
+            
             <!-- Facebook -->
-            <a  class="redes_link" href="https://www.facebook.com/">
-                <img class="redes_icono" src="../img/inicio/facebook.png" alt="Icono Facebook">
-                Facebook
+            <a class="redes_link" href="https://www.facebook.com/" target="_blank">
+                <div class="d-flex">
+                    <img class="redes_icono" src="../img/inicio/facebook.png" alt="Icono Facebook">
+                    <p class="mostrar_responsive ms-1">Facebook</p>
+                </div>
             </a>
-    
+            
             <!-- Twitter -->
-            <a  class="redes_link" href="https://twitter.com/">
-                <img class="redes_icono" src="../img/inicio/twitter.png" alt="Icono twitter">
-                Twitter
+            <a class="redes_link" href="https://twitter.com/" target="_blank">
+                <div class="d-flex">
+                    <img class="redes_icono mostrar" src="../img/inicio/twitter.png" alt="Icono twitter">
+                    <p class="mostrar_responsive ms-1">Twitter</p>
+                </div>
             </a>
         </div>
-
+        
+        <p>Todos los derechos reservados.</p>
+    
     </footer>
+
+    <!-- Script de Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+       integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+       crossorigin="anonymous">
+   </script>
 
 
 </body>

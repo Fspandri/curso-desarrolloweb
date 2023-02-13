@@ -138,17 +138,6 @@ border-radius: 20px;
     height: 200px;
 }   
 
-.sucursales{
-    margin: 30px;
-    width: 30%;
-    display: inline-block;
-}
-
-.sucursales_contenedor {
-    display: flex;
-    justify-content: space-around;
-}
-
 .carousel_main{
     width: 95%;
 }

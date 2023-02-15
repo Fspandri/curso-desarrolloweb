@@ -7,8 +7,6 @@
 * {
     margin: 0;
     padding: 0;
-    /* font-family: 'Sintony', sans-serif; */
-    /* text-decoration: none; */
 }
 
 body {
@@ -25,32 +23,11 @@ main {
 }
 
 
-/* ***** TITULOS ***** */
+/* ***** TITULO ***** */
 
 h1 {
-    padding: 15px;
-    margin-bottom: 15px;
-    font-family:'Gloria Hallelujah', cursive;
-    color: #8F3985;
-    font-size: 40px;
-    text-align: center;
-    animation-duration: 3s;
-    animation-name: animacionfrase;
-    animation-iteration-count: infinite;   
-}
-
-@keyframes animacionfrase {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
-
-h2 {
     margin-bottom: 20px;
+    font-size: 30px;
 }
 
 /* ***** LINKS ***** */
@@ -125,6 +102,28 @@ footer {
     height: 50px;
 }
 
+/* ***** FRASE INICIO ***** */
+
+.estilofrase {
+    padding: 15px;
+    margin-bottom: 15px;
+    font-family:'Gloria Hallelujah', cursive;
+    color: #8F3985;
+    font-size: 40px;
+    text-align: center;
+    animation-duration: 3s;
+    animation-name: animacionfrase;
+    animation-iteration-count: infinite;   
+}
+
+@keyframes animacionfrase {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
 
 /* ***** QUIENES SOMOS ***** */
 
@@ -145,7 +144,7 @@ footer {
 
 /* ***** CONTACTO ***** */
 
-.diseño_formulario {
+.estilo_formulario {
 padding: 20px;
 border: 3px solid #07BEB8;
 border-radius: 20px;

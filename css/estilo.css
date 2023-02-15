@@ -4,68 +4,89 @@
 
 /* ***** RESET Y GENERALES ***** */
 
-*{
+* {
     margin: 0;
     padding: 0;
-    font-family: 'Sintony', sans-serif;
-    text-decoration: none;
+    /* font-family: 'Sintony', sans-serif; */
+    /* text-decoration: none; */
 }
 
-main{
+body {
+    font-family: 'Sintony', sans-serif;
+}
+
+main {
     margin: 20px;
     bottom: 20px;
+}
+
+.carousel_main {
+    width: 95%;
 }
 
 
 /* ***** TITULOS ***** */
 
-h1{
+h1 {
     padding: 15px;
     margin-bottom: 15px;
     font-family:'Gloria Hallelujah', cursive;
     color: #8F3985;
     font-size: 40px;
     text-align: center;
+    animation-duration: 3s;
+    animation-name: animacionfrase;
+    animation-iteration-count: infinite;   
 }
 
-h2{
+@keyframes animacionfrase {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+h2 {
     margin-bottom: 20px;
 }
 
 /* ***** LINKS ***** */
 
-a{
+a {
     text-decoration: none;
 }
 
-
 /* ***** MENU NAV ***** */
 
-header{
+header {
     background-color: #EFD9CE;
     
 }
 
-li{
+li {
     list-style-type: none;
     display: inline-block;
 }
 
-.menu a{
+.menu a {
     color: #25283D;
     text-decoration: none;
     font-weight: bold;
     margin: 20px 20px;
 }
 
-p{
+p {
     color: #25283D;
     margin-bottom: 20px;
 }
 
 .logo {
     height: 100px;
-    margin-left: 20px
+    margin-left: 20px;
+    transform: rotate(-5deg)
 }
 
 .botonBusqueda {
@@ -82,14 +103,14 @@ p{
 
 /* ***** FOOTER ***** */
 
-footer{
+footer {
     text-align: center;
     padding: 10px 0px;
     font-size: small;
     background-color: #EFD9CE;
 }
 
-.redes{
+.redes {
     margin-top: 20px;
 }
 
@@ -133,18 +154,20 @@ border-radius: 20px;
 
 /* ***** SUCURSALES ***** */
 
-.mapa{
+.mapa {
     width: 100%;
     height: 200px;
+    transition: all 2s;
 }   
 
-.carousel_main{
-    width: 95%;
+.mapa:hover {
+    height: 300px;
 }
+
 
 /* ***** RESPONSIVE ***** */
 
-.mostrar_responsive{
+.mostrar_responsive {
     display: none;
 }
 
@@ -158,6 +181,5 @@ border-radius: 20px;
         width: 20px;
         height: 20px;
     }
-
 }
 

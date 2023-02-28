@@ -1,0 +1,33 @@
+header {
+	background-color: $background-color_1;
+}
+li {
+	list-style-type: none;
+	display: inline-block;
+}
+.menu {
+	a {
+		color: $color_2;
+		font-weight: bold;
+		margin: 20px 20px;
+		color: $color_1;
+	}
+}
+p {
+	color: $color_2;
+	margin-bottom: 20px;
+}
+.logo {
+	height: 100px;
+	margin-left: 20px;
+	transform: rotate(-5deg);
+}
+.boton_personalizado {
+	background-color: $background-color_2;
+	color: $color_3;
+	border: none;
+	&:hover {
+		background-color: $background-color_3;
+		color: $color_3;
+	}
+}

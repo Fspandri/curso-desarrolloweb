@@ -11,6 +11,9 @@
 
 body {
     font-family: 'Sintony', sans-serif;
+    display: grid;
+    min-height: 100vh;
+    grid-template-rows: auto 1fr auto;
 }
 
 main {
@@ -23,11 +26,19 @@ main {
 }
 
 
-/* ***** TITULO ***** */
+/* ***** TITULOS ***** */
 
 h1 {
     margin-bottom: 20px;
     font-size: 30px;
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-size: 25px;
+    color: #8F3985;
+    padding-top: 40px;
+    font-weight: bold;
 }
 
 /* ***** LINKS ***** */
@@ -50,9 +61,9 @@ li {
 
 .menu a {
     color: #25283D;
-    text-decoration: none;
     font-weight: bold;
     margin: 20px 20px;
+    color: #8F3985;
 }
 
 p {
@@ -66,13 +77,13 @@ p {
     transform: rotate(-5deg)
 }
 
-.botonBusqueda {
+.boton_personalizado {
     background-color: #07beb8e0;
     color: white;
     border: none;
 }
 
-.botonBusqueda:hover {
+.boton_personalizado:hover {
     background-color: #07beb89a;
     color: white; 
 }
@@ -85,6 +96,7 @@ footer {
     padding: 10px 0px;
     font-size: small;
     background-color: #EFD9CE;
+    
 }
 
 .redes {
@@ -136,10 +148,23 @@ footer {
 
 /* ***** PAQUETES ***** */
 
-.imagen_paquetes {
-    width: 350px;
-    height: 200px;
-    margin: 40px;
+.contenedor_itemCarousel{
+    padding: 0px 60px;
+}
+
+.botonCarousel{
+    width: 50px;
+    color: black;
+}
+
+.carousel-control-next,
+.carousel-control-prev /*, .carousel-indicators */ {
+    filter: invert(100%);
+}
+
+.listaDestionos {
+    color: #8F3985;
+    font-weight: bold;
 }
 
 /* ***** CONTACTO ***** */
@@ -150,6 +175,13 @@ border: 3px solid #07BEB8;
 border-radius: 20px;
 
 }
+
+.imagen_contacto {
+    width: 400px;
+    height: 400px;
+
+}
+
 
 /* ***** SUCURSALES ***** */
 
@@ -166,19 +198,29 @@ border-radius: 20px;
 
 /* ***** RESPONSIVE ***** */
 
-.mostrar_responsive {
+.mostrar_desktop {
     display: none;
 }
 
-@media screen and (min-width: 576px) {
+.mostrar_mobile {
 
-    .mostrar_responsive{
+    display: block;
+}
+
+@media screen and (min-width: 720px) {
+
+    .mostrar_desktop{
         display: block;
     }
     
     .redes_icono {
         width: 20px;
         height: 20px;
+    }
+
+    .mostrar_mobile {
+
+        display: none;
     }
 }
 

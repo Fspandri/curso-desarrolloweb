@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
-    <link rel="icon" href="../img/inicio/favicon.png"/>
+    <link rel="icon" href="../img/inicio/favicon.png" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bon Voyage</title>
@@ -10,24 +11,23 @@
     <!-- CSS Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    
+
     <!-- Libreria Animate -->
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
     <!-- CCS -->
     <link rel="stylesheet" href="../css/estilo.css">
 </head>
+
 <body>
     <header>
-        
+
         <!-- MENU BOOTSTRAP -->
 
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
-                <a class="navbar-brand" href="../index.html"><img src="../img/inicio/logo.png" class="logo" alt="Logo de Bon Voyage"></a>
+                <a class="navbar-brand" href="../index.html"><img src="../img/inicio/logo.png" class="logo"
+                        alt="Logo de Bon Voyage"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -40,7 +40,7 @@
                             <a class="nav-link" href="../html/quienessomos.html">Quienes Somos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="../html/paquetes.html">Paquetes</a>
+                            <a class="nav-link active" href="../html/paquetes.html">Paquetes</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="../html/sucursales.html">Sucursales</a>
@@ -51,9 +51,11 @@
                     </ul>
                     <form class="d-flex" role="search">
                         <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
-                        <button class="btn botonBusqueda" type="submit">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
-                                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                        <button class="btn boton_personalizado" type="submit">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-search" viewBox="0 0 16 16">
+                                <path
+                                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
                             </svg>
                         </button>
                     </form>
@@ -61,73 +63,866 @@
             </div>
         </nav>
 
-
     </header>
 
     <main>
         <h1 class="titulo animate__animated animate__fadeIn">Paquetes</h1>
-        <p class="parrafoInicio">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam perferendis ipsa omnis! Similique dignissimos eum consectetur tempore quasi necessitatibus vel commodi, voluptatibus dolores laboriosam molestiae soluta omnis enim minima. Quibusdam?</p>
-        <img class="imagen_paquetes" src="../img/paquetes/paquetecancun.jpg" alt="Imagen de playa">
-        <img class="imagen_paquetes" src="../img/paquetes/paquetecuba.jpg" alt="Imagen de Cuba">
-        <img class="imagen_paquetes" src="../img/paquetes/paquetecapadocia.jpg" alt="Imagen de globos aerostáticos volando">
-        <img class="imagen_paquetes" src="../img/paquetes/paquetetailandia.jpg" alt="Imagen de isla">
-        <img class="imagen_paquetes" src="../img/paquetes/paqueteparis.jpg" alt="Imagen de Museo Louvre">
-        <img class="imagen_paquetes" src="../img/paquetes/paqueteroma.jpg" alt="Imagen de Coliseo Romano">
-        <img class="imagen_paquetes" src="../img/paquetes/paquetegrecia.jpg" alt="Imagen de Grecia">
+        <p class="parrafoInicio">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam perferendis ipsa omnis!
+            Similique dignissimos eum consectetur tempore quasi necessitatibus vel commodi, voluptatibus dolores
+            laboriosam molestiae soluta omnis enim minima. Quibusdam?</p>
 
-        <img class="imagen_paquetes" src="../img/paquetes/paquetebariloche.jpg" alt="Imagen de lago">
-        <img class="imagen_paquetes" src="../img/paquetes/paquetesalta.jpg" alt="Imagen de Salta">
-        
+
+        <div class="mostrar_desktop">
+
+            <div class="col-4">
+                <div id="list-example" class="list-group">
+                    <a class="list-group-item list-group-item-action listaDestionos" href="#list-item-1">Argentina</a>
+                    <a class="list-group-item list-group-item-action listaDestionos" href="#list-item-2">Caribe</a>
+                    <a class="list-group-item list-group-item-action listaDestionos" href="#list-item-3">Destinos
+                        Exóticos</a>
+                    <a class="list-group-item list-group-item-action listaDestionos" href="#list-item-4">Europa</a>
+                </div>
+            </div>
+
+            <h2 id="list-item-1">Argentina</h2>
+
+            <!-- CAROUSEL ARGENTINA -->
+
+            <div id="carouselArgentina" class="carousel slide">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+
+                        <div class="contenedor_itemCarousel">
+                            <div class="row row-cols-1 row-cols-sm-3 g-4">
+                                <div class="col">
+                                    <div class="card h-100">
+                                        <img src="../img/paquetes/bariloche.png" class="card-img-top"
+                                            alt="Imagen de Bariloche">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Bariloche</h5>
+                                            <p class="card-text">This is a longer card with supporting text
+                                                below as a
+                                                natural lead-in to
+                                                additional content. This content is a little bit longer.</p>
+                                            <a href="contacto.html" class="btn boton_personalizado">Mas Info</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card h-100">
+                                        <img src="../img/paquetes/cataratasiguazu.jpg" class="card-img-top"
+                                            alt="Imagen de Cataratas del Iguazu">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Cataratas del Iguazu</h5>
+                                            <p class="card-text">This is a longer card with supporting text
+                                                below as a
+                                                natural lead-in to
+                                                additional content. This content is a little bit longer.</p>
+                                            <a href="contacto.html" class="btn boton_personalizado">Mas Info</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card h-100">
+                                        <img src="../img/paquetes/cordoba.png" class="card-img-top"
+                                            alt="Imagen de Cordoba">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Capilla del Monte y La Cumbre</h5>
+                                            <p class="card-text">This is a longer card with supporting text
+                                                below as a
+                                                natural lead-in to
+                                                additional content.</p>
+                                            <a href="contacto.html" class="btn boton_personalizado">Mas Info</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="carousel-item">
+
+                        <div class="contenedor_itemCarousel">
+                            <div class="row row-cols-1 row-cols-sm-3 g-4">
+                                <div class="col">
+                                    <div class="card h-100">
+                                        <img src="../img/paquetes/salta.jpg" class="card-img-top" alt="Imagen de Salta">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Salta y Jujuy</h5>
+                                            <p class="card-text">This is a longer card with supporting text
+                                                below as a
+                                                natural lead-in to
+                                                additional content. This content is a little bit longer.</p>
+                                            <a href="contacto.html" class="btn boton_personalizado">Mas Info</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card h-100">
+                                        <img src="../img/paquetes/mardelplata.png" class="card-img-top"
+                                            alt="Imagen de Mar del Plata">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Mar del Plata</h5>
+                                            <p class="card-text">This is a longer card with supporting text
+                                                below as a
+                                                natural lead-in to
+                                                additional content. This content is a little bit longer.</p>
+                                            <a href="contacto.html" class="btn boton_personalizado">Mas Info</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <button class="carousel-control-prev botonCarousel" type="button" data-bs-target="#carouselArgentina"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next botonCarousel" type="button" data-bs-target="#carouselArgentina"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+
+            <h2 id="list-item-2">Caribe</h2>
+
+            <!-- CAROUSEL CARIBE -->
+
+            <div id="carouselCaribe" class="carousel slide">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+
+                        <div class="contenedor_itemCarousel">
+                            <div class="row row-cols-1 row-cols-sm-3 g-4">
+                                <div class="col">
+                                    <div class="card h-100">
+                                        <img src="../img/paquetes/cancun.jpg" class="card-img-top"
+                                            alt="Imagen de Cancun">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Cancun y Playa del Carmen</h5>
+                                            <p class="card-text">This is a longer card with supporting text
+                                                below as a
+                                                natural lead-in to
+                                                additional content. This content is a little bit longer.</p>
+                                            <a href="contacto.html" class="btn boton_personalizado">Mas Info</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card h-100">
+                                        <img src="../img/paquetes/colombia.jpg" class="card-img-top"
+                                            alt="Imagen de Isla San Andres">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Cartagena e Isla San Andres</h5>
+                                            <p class="card-text">This is a longer card with supporting text
+                                                below as a
+                                                natural lead-in to
+                                                additional content. This content is a little bit longer.</p>
+                                            <a href="contacto.html" class="btn boton_personalizado">Mas Info</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card h-100">
+                                        <img src="../img/paquetes/cuba.png" class="card-img-top" alt="Imagen de Cuba">
+                                        <div class="card-body">
+                                            <h5 class="card-title">La Habana y Varadero</h5>
+                                            <p class="card-text">This is a longer card with supporting text
+                                                below as a
+                                                natural lead-in to
+                                                additional content.</p>
+                                            <a href="contacto.html" class="btn boton_personalizado">Mas Info</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="carousel-item">
+
+                        <div class="contenedor_itemCarousel">
+                            <div class="row row-cols-1 row-cols-sm-3 g-4">
+                                <div class="col">
+                                    <div class="card h-100">
+                                        <img src="../img/paquetes/puntacana.png" class="card-img-top"
+                                            alt="Imagen de Punta Cana">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Punta Cana</h5>
+                                            <p class="card-text">This is a longer card with supporting text
+                                                below as a
+                                                natural lead-in to
+                                                additional content. This content is a little bit longer.</p>
+                                            <a href="contacto.html" class="btn boton_personalizado">Mas Info</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <button class="carousel-control-prev botonCarousel" type="button" data-bs-target="#carouselCaribe"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next botonCarousel" type="button" data-bs-target="#carouselCaribe"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+
+            <h2 id="list-item-3">Destinos Exóticos</h2>
+
+            <!-- CAROUSEL DESTINOS EXOTICOS -->
+
+            <div id="carouselDestinosExoticos" class="carousel slide">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+
+                        <div class="contenedor_itemCarousel">
+                            <div class="row row-cols-1 row-cols-sm-3 g-4">
+                                <div class="col">
+                                    <div class="card h-100">
+                                        <img src="../img/paquetes/arabiasaudita.png" class="card-img-top"
+                                            alt="Imagen de Arabia Saudita">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Arabia Saudita</h5>
+                                            <p class="card-text">This is a longer card with supporting text
+                                                below as a
+                                                natural lead-in to
+                                                additional content. This content is a little bit longer.</p>
+                                            <a href="contacto.html" class="btn boton_personalizado">Mas Info</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card h-100">
+                                        <img src="../img/paquetes/capadocia.png" class="card-img-top"
+                                            alt="Imagen de Capadocia">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Estambul y Capadocia</h5>
+                                            <p class="card-text">This is a longer card with supporting text
+                                                below as a
+                                                natural lead-in to
+                                                additional content. This content is a little bit longer.</p>
+                                            <a href="contacto.html" class="btn boton_personalizado">Mas Info</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card h-100">
+                                        <img src="../img/paquetes/egipto.png" class="card-img-top"
+                                            alt="Imagen de Egipto">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Egipto y Marruecos</h5>
+                                            <p class="card-text">This is a longer card with supporting text
+                                                below as a
+                                                natural lead-in to
+                                                additional content.</p>
+                                            <a href="contacto.html" class="btn boton_personalizado">Mas Info</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="carousel-item">
+
+                        <div class="contenedor_itemCarousel">
+                            <div class="row row-cols-1 row-cols-sm-3 g-4">
+                                <div class="col">
+                                    <div class="card h-100">
+                                        <img src="../img/paquetes/tailandia.png" class="card-img-top"
+                                            alt="Imagen de Tailandia">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Tailandia</h5>
+                                            <p class="card-text">This is a longer card with supporting text
+                                                below as a
+                                                natural lead-in to
+                                                additional content. This content is a little bit longer.</p>
+                                            <a href="contacto.html" class="btn boton_personalizado">Mas Info</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card h-100">
+                                        <img src="../img/paquetes/japon.png" class="card-img-top" alt="Imagen de Japon">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Japon</h5>
+                                            <p class="card-text">This is a longer card with supporting text
+                                                below as a
+                                                natural lead-in to
+                                                additional content. This content is a little bit longer.</p>
+                                            <a href="contacto.html" class="btn boton_personalizado">Mas Info</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <button class="carousel-control-prev botonCarousel" type="button"
+                    data-bs-target="#carouselDestinosExoticos" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next botonCarousel" type="button"
+                    data-bs-target="#carouselDestinosExoticos" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+
+            <h2 id="list-item-4">Europa</h2>
+
+            <!-- CAROUSEL EUROPA -->
+
+            <div id="carouselEuropa" class="carousel slide">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+
+                        <div class="contenedor_itemCarousel">
+                            <div class="row row-cols-1 row-cols-sm-3 g-4">
+                                <div class="col">
+                                    <div class="card h-100">
+                                        <img src="../img/paquetes/barcelona.png" class="card-img-top"
+                                            alt="Imagen de Barcelona">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Barcelona, Madrid y San Sebastian</h5>
+                                            <p class="card-text">This is a longer card with supporting text
+                                                below as a
+                                                natural lead-in to
+                                                additional content. This content is a little bit longer.</p>
+                                            <a href="contacto.html" class="btn boton_personalizado">Mas Info</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card h-100">
+                                        <img src="../img/paquetes/paris.png" class="card-img-top" alt="Imagen de Paris">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Paris y Londres</h5>
+                                            <p class="card-text">This is a longer card with supporting text
+                                                below as a
+                                                natural lead-in to
+                                                additional content. This content is a little bit longer.</p>
+                                            <a href="contacto.html" class="btn boton_personalizado">Mas Info</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card h-100">
+                                        <img src="../img/paquetes/roma.png" class="card-img-top" alt="Imagen de Roma">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Roma, Venecia y Florencia</h5>
+                                            <p class="card-text">This is a longer card with supporting text
+                                                below as a
+                                                natural lead-in to
+                                                additional content.</p>
+                                            <a href="contacto.html" class="btn boton_personalizado">Mas Info</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="carousel-item">
+
+                        <div class="contenedor_itemCarousel">
+                            <div class="row row-cols-1 row-cols-sm-3 g-4">
+                                <div class="col">
+                                    <div class="card h-100">
+                                        <img src="../img/paquetes/santorini.png" class="card-img-top"
+                                            alt="Imagen de Santorini">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Santorini y Costa Amalfitana</h5>
+                                            <p class="card-text">This is a longer card with supporting text
+                                                below as a
+                                                natural lead-in to
+                                                additional content. This content is a little bit longer.</p>
+                                            <a href="contacto.html" class="btn boton_personalizado">Mas Info</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card h-100">
+                                        <img src="../img/paquetes/noruega.png" class="card-img-top"
+                                            alt="Imagen de Noruega">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Noruega</h5>
+                                            <p class="card-text">This is a longer card with supporting text
+                                                below as a
+                                                natural lead-in to
+                                                additional content. This content is a little bit longer.</p>
+                                            <a href="contacto.html" class="btn boton_personalizado">Mas Info</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <button class="carousel-control-prev botonCarousel" type="button" data-bs-target="#carouselEuropa"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next botonCarousel" type="button" data-bs-target="#carouselEuropa"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+
+        </div>
+
+
+        <div class="mostrar_mobile">
+
+            <!-- LISTA Y PAQUETES <720px -->
+
+            <div class="col-12">
+                <div id="list-example" class="list-group">
+                    <a class="list-group-item list-group-item-action listaDestionos" href="#list-item-1-mobile">Argentina</a>
+                    <a class="list-group-item list-group-item-action listaDestionos" href="#list-item-2-mobile">Caribe</a>
+                    <a class="list-group-item list-group-item-action listaDestionos" href="#list-item-3-mobile">Destinos
+                        Exóticos</a>
+                    <a class="list-group-item list-group-item-action listaDestionos" href="#list-item-4-mobile">Europa</a>
+                </div>
+            </div>
+
+            <!-- CAROUSEL ARGENTINA -->
+
+            <h2 id="list-item-1-mobile">Argentina</h2>
+
+            <div id="carouselArgentina2" class="carousel slide">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+
+                        <div class="card h-100">
+                            <img src="../img/paquetes/bariloche.png" class="card-img-top" alt="Imagen de Bariloche">
+                            <div class="card-body">
+                                <h5 class="card-title">Bariloche</h5>
+                                <p class="card-text">This is a longer card with supporting text
+                                    below as a
+                                    natural lead-in to
+                                    additional content. This content is a little bit longer.</p>
+                                <a href="contacto.html" class="btn boton_personalizado">Mas Info</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+
+                        <div class="card h-100">
+                            <img src="../img/paquetes/cataratasiguazu.jpg" class="card-img-top"
+                                alt="Imagen de Cataratas del Iguazu">
+                            <div class="card-body">
+                                <h5 class="card-title">Cataratas del Iguazu</h5>
+                                <p class="card-text">This is a longer card with supporting text
+                                    below as a
+                                    natural lead-in to
+                                    additional content. This content is a little bit longer.</p>
+                                <a href="contacto.html" class="btn boton_personalizado">Mas Info</a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="carousel-item">
+
+                        <div class="card h-100">
+                            <img src="../img/paquetes/cordoba.png" class="card-img-top" alt="Imagen de Cordoba">
+                            <div class="card-body">
+                                <h5 class="card-title">Capilla del Monte y La Cumbre</h5>
+                                <p class="card-text">This is a longer card with supporting text
+                                    below as a
+                                    natural lead-in to
+                                    additional content. This content is a little bit longer.</p>
+                                <a href="contacto.html" class="btn boton_personalizado">Mas Info</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+
+                        <div class="card h-100">
+                            <img src="../img/paquetes/salta.jpg" class="card-img-top" alt="Imagen de Salta">
+                            <div class="card-body">
+                                <h5 class="card-title">Salta y Jujuy</h5>
+                                <p class="card-text">This is a longer card with supporting text
+                                    below as a
+                                    natural lead-in to
+                                    additional content. This content is a little bit longer.</p>
+                                <a href="contacto.html" class="btn boton_personalizado">Mas Info</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+
+                        <div class="card h-100">
+                            <img src="../img/paquetes/mardelplata.png" class="card-img-top"
+                                alt="Imagen de Mar del Plata">
+                            <div class="card-body">
+                                <h5 class="card-title">Salta y Jujuy</h5>
+                                <p class="card-text">This is a longer card with supporting text
+                                    below as a
+                                    natural lead-in to
+                                    additional content. This content is a little bit longer.</p>
+                                <a href="contacto.html" class="btn boton_personalizado">Mas Info</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="carousel-control-prev botonCarousel" type="button"
+                        data-bs-target="#carouselArgentina2" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next botonCarousel" type="button"
+                        data-bs-target="#carouselArgentina2" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- CAROUSEL CARIBE -->
+
+            <h2 id="list-item-2-mobile">Caribe</h2>
+
+            <div id="carouselCaribe2" class="carousel slide">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+
+                        <div class="card h-100">
+                            <img src="../img/paquetes/cancun.jpg" class="card-img-top" alt="Imagen de Cancun">
+                            <div class="card-body">
+                                <h5 class="card-title">Cancun y Playa del Carmen</h5>
+                                <p class="card-text">This is a longer card with supporting text
+                                    below as a
+                                    natural lead-in to
+                                    additional content. This content is a little bit longer.</p>
+                                <a href="contacto.html" class="btn boton_personalizado">Mas Info</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+
+                        <div class="card h-100">
+                            <img src="../img/paquetes/colombia.jpg" class="card-img-top"
+                                alt="Imagen de Cataratas del Iguazu">
+                            <div class="card-body">
+                                <h5 class="card-title">San Andres y Cartagena</h5>
+                                <p class="card-text">This is a longer card with supporting text
+                                    below as a
+                                    natural lead-in to
+                                    additional content. This content is a little bit longer.</p>
+                                <a href="contacto.html" class="btn boton_personalizado">Mas Info</a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="carousel-item">
+
+                        <div class="card h-100">
+                            <img src="../img/paquetes/cuba.png" class="card-img-top" alt="Imagen de Cuba">
+                            <div class="card-body">
+                                <h5 class="card-title">La Habana y Varadero</h5>
+                                <p class="card-text">This is a longer card with supporting text
+                                    below as a
+                                    natural lead-in to
+                                    additional content. This content is a little bit longer.</p>
+                                <a href="contacto.html" class="btn boton_personalizado">Mas Info</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+
+                        <div class="card h-100">
+                            <img src="../img/paquetes/puntacana.png" class="card-img-top" alt="Imagen de Punta Cana">
+                            <div class="card-body">
+                                <h5 class="card-title">Punta Cana</h5>
+                                <p class="card-text">This is a longer card with supporting text
+                                    below as a
+                                    natural lead-in to
+                                    additional content. This content is a little bit longer.</p>
+                                <a href="contacto.html" class="btn boton_personalizado">Mas Info</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="carousel-control-prev botonCarousel" type="button" data-bs-target="#carouselCaribe2"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next botonCarousel" type="button" data-bs-target="#carouselCaribe2"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+
+
+            <!-- CAROUSEL DESTINOS EXOTICOS -->
+
+            <h2 id="list-item-3-mobile">Destinos Exóticos</h2>
+
+            <div id="carouselDestinosExoticos2" class="carousel slide">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+
+                        <div class="card h-100">
+                            <img src="../img/paquetes/arabiasaudita.png" class="card-img-top"
+                                alt="Imagen de Arabia Saudita">
+                            <div class="card-body">
+                                <h5 class="card-title">Arabia Saudita</h5>
+                                <p class="card-text">This is a longer card with supporting text
+                                    below as a
+                                    natural lead-in to
+                                    additional content. This content is a little bit longer.</p>
+                                <a href="contacto.html" class="btn boton_personalizado">Mas Info</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+
+                        <div class="card h-100">
+                            <img src="../img/paquetes/capadocia.png" class="card-img-top" alt="Imagen de Capadocia">
+                            <div class="card-body">
+                                <h5 class="card-title">Estambul y Capadocia</h5>
+                                <p class="card-text">This is a longer card with supporting text
+                                    below as a
+                                    natural lead-in to
+                                    additional content. This content is a little bit longer.</p>
+                                <a href="contacto.html" class="btn boton_personalizado">Mas Info</a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="carousel-item">
+
+                        <div class="card h-100">
+                            <img src="../img/paquetes/egipto.png" class="card-img-top" alt="Imagen de Egipto">
+                            <div class="card-body">
+                                <h5 class="card-title">Egipto y Marruecos</h5>
+                                <p class="card-text">This is a longer card with supporting text
+                                    below as a
+                                    natural lead-in to
+                                    additional content. This content is a little bit longer.</p>
+                                <a href="contacto.html" class="btn boton_personalizado">Mas Info</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+
+                        <div class="card h-100">
+                            <img src="../img/paquetes/tailandia.png" class="card-img-top" alt="Imagen de Tailandia">
+                            <div class="card-body">
+                                <h5 class="card-title">Tailandia</h5>
+                                <p class="card-text">This is a longer card with supporting text
+                                    below as a
+                                    natural lead-in to
+                                    additional content. This content is a little bit longer.</p>
+                                <a href="contacto.html" class="btn boton_personalizado">Mas Info</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+
+                        <div class="card h-100">
+                            <img src="../img/paquetes/japon.png" class="card-img-top" alt="Imagen de Japon">
+                            <div class="card-body">
+                                <h5 class="card-title">Japon</h5>
+                                <p class="card-text">This is a longer card with supporting text
+                                    below as a
+                                    natural lead-in to
+                                    additional content. This content is a little bit longer.</p>
+                                <a href="contacto.html" class="btn boton_personalizado">Mas Info</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="carousel-control-prev botonCarousel" type="button"
+                        data-bs-target="#carouselDestinosExoticos2" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next botonCarousel" type="button"
+                        data-bs-target="#carouselDestinosExoticos2" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- CAROUSEL EUROPA -->
+
+            <h2 id="list-item-4-mobile">Europa</h2>
+
+            <div id="carouselEuropa2" class="carousel slide">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+
+                        <div class="card h-100">
+                            <img src="../img/paquetes/barcelona.png" class="card-img-top" alt="Imagen de Barcelona">
+                            <div class="card-body">
+                                <h5 class="card-title">Barcelona, Madrid y San Sebastian</h5>
+                                <p class="card-text">This is a longer card with supporting text
+                                    below as a
+                                    natural lead-in to
+                                    additional content. This content is a little bit longer.</p>
+                                <a href="contacto.html" class="btn boton_personalizado">Mas Info</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+
+                        <div class="card h-100">
+                            <img src="../img/paquetes/paris.png" class="card-img-top" alt="Imagen de Paris">
+                            <div class="card-body">
+                                <h5 class="card-title">Paris y Londres</h5>
+                                <p class="card-text">This is a longer card with supporting text
+                                    below as a
+                                    natural lead-in to
+                                    additional content. This content is a little bit longer.</p>
+                                <a href="contacto.html" class="btn boton_personalizado">Mas Info</a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="carousel-item">
+
+                        <div class="card h-100">
+                            <img src="../img/paquetes/roma.png" class="card-img-top" alt="Imagen de Roma">
+                            <div class="card-body">
+                                <h5 class="card-title">Roma, Venecia y Florencia</h5>
+                                <p class="card-text">This is a longer card with supporting text
+                                    below as a
+                                    natural lead-in to
+                                    additional content. This content is a little bit longer.</p>
+                                <a href="contacto.html" class="btn boton_personalizado">Mas Info</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+
+                        <div class="card h-100">
+                            <img src="../img/paquetes/santorini.png" class="card-img-top" alt="Imagen de Santorini">
+                            <div class="card-body">
+                                <h5 class="card-title">Santorini y Costa Amalfitana</h5>
+                                <p class="card-text">This is a longer card with supporting text
+                                    below as a
+                                    natural lead-in to
+                                    additional content. This content is a little bit longer.</p>
+                                <a href="contacto.html" class="btn boton_personalizado">Mas Info</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+
+                        <div class="card h-100">
+                            <img src="../img/paquetes/noruega.png" class="card-img-top" alt="Imagen de Noruega">
+                            <div class="card-body">
+                                <h5 class="card-title">Noruega</h5>
+                                <p class="card-text">This is a longer card with supporting text
+                                    below as a
+                                    natural lead-in to
+                                    additional content. This content is a little bit longer.</p>
+                                <a href="contacto.html" class="btn boton_personalizado">Mas Info</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="carousel-control-prev botonCarousel" type="button" data-bs-target="#carouselEuropa2"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next botonCarousel" type="button" data-bs-target="#carouselEuropa2"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
     </main>
 
     <footer>
-        
+
         <!-- REDES -->
-        
+
         <div class="redes d-flex justify-content-center">
             <!-- WhatsApp -->
             <a class="redes_link" href="https://web.whatsapp.com/" target="_blank">
                 <div class="d-flex">
                     <img class="redes_icono" src="../img/inicio/whatsapp.png" alt="Icono WhatsApp">
-                    <p class="mostrar_responsive ms-1">WhatsApp</p>
+                    <p class="mostrar_desktop ms-1">WhatsApp</p>
                 </div>
             </a>
-            
+
             <!-- Instagram -->
             <a class="redes_link" href="https://www.instagram.com/" target="_blank">
                 <div class="d-flex">
                     <img class="redes_icono" src="../img/inicio/instagram.png" alt="Icono Instagram">
-                    <p class="mostrar_responsive ms-1">Instagram</p>
+                    <p class="mostrar_desktop ms-1">Instagram</p>
                 </div>
             </a>
-            
+
             <!-- Facebook -->
             <a class="redes_link" href="https://www.facebook.com/" target="_blank">
                 <div class="d-flex">
                     <img class="redes_icono" src="../img/inicio/facebook.png" alt="Icono Facebook">
-                    <p class="mostrar_responsive ms-1">Facebook</p>
+                    <p class="mostrar_desktop ms-1">Facebook</p>
                 </div>
             </a>
-            
+
             <!-- Twitter -->
             <a class="redes_link" href="https://twitter.com/" target="_blank">
                 <div class="d-flex">
                     <img class="redes_icono mostrar" src="../img/inicio/twitter.png" alt="Icono twitter">
-                    <p class="mostrar_responsive ms-1">Twitter</p>
+                    <p class="mostrar_desktop ms-1">Twitter</p>
                 </div>
             </a>
         </div>
-        
+
         <p>Todos los derechos reservados.</p>
-    
+
     </footer>
 
     <!-- Script de Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-      crossorigin="anonymous">
-    </script>
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
+        </script>
 
 
 </body>
+
 </html>

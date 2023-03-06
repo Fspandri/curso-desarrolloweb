@@ -46,6 +46,15 @@ a {
   display: block;
 }
 
+.boton_personalizado {
+  background-color: rgba(7, 190, 184, 0.8784313725);
+  color: white;
+}
+.boton_personalizado:hover {
+  background-color: rgba(7, 190, 184, 0.6039215686);
+  color: white;
+}
+
 header {
   background-color: #EFD9CE;
 }
@@ -71,16 +80,6 @@ p {
   height: 100px;
   margin-left: 20px;
   transform: rotate(-5deg);
-}
-
-.boton_personalizado {
-  background-color: rgba(7, 190, 184, 0.8784313725);
-  color: white;
-  border: none;
-}
-.boton_personalizado:hover {
-  background-color: rgba(7, 190, 184, 0.6039215686);
-  color: white;
 }
 
 .estilofrase {

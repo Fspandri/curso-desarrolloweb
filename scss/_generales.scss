@@ -1,3 +1,5 @@
+//*****Reset y generales*****//
+
 * {
 	margin: 0;
 	padding: 0;
@@ -35,5 +37,14 @@ a {
 }
 .mostrar_mobile {
 	display: block;
+}
+
+.boton_personalizado {
+	background-color: $background-color_2;
+	color: $color_3;
+	&:hover {
+		background-color: $background-color_3;
+		color: $color_3;
+	}
 }
     

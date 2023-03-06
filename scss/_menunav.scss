@@ -22,12 +22,4 @@ p {
 	margin-left: 20px;
 	transform: rotate(-5deg);
 }
-.boton_personalizado {
-	background-color: $background-color_2;
-	color: $color_3;
-	border: none;
-	&:hover {
-		background-color: $background-color_3;
-		color: $color_3;
-	}
-}
+

@@ -40,5 +40,16 @@ TECNOLOGIAS USADAS:
 HTML, CSS, BOOTSTRAP, SASS, FLEXBOX, GRID, GIT, GITHUB, y SEO.
 
 ---------------------
+
+GITHUB
+https://github.com/Fspandri/curso-desarrolloweb.git
+
+GITHUB PAGES
+https://fspandri.github.io/curso-desarrolloweb/
+
+NETLIFY
+https://bon-voyage-fs.netlify.app/
+
+---------------------
 Florencia Spandri - Marzo 2023.
 

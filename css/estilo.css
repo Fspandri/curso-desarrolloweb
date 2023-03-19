@@ -7,6 +7,7 @@
 
 body {
   font-family: "Sintony", sans-serif;
+  font-size: larger;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -15,10 +16,6 @@ body {
 main {
   margin: 20px;
   bottom: 20px;
-}
-
-.carousel_main {
-  width: 95%;
 }
 
 h1 {
@@ -34,25 +31,62 @@ h2 {
   font-weight: bold;
 }
 
+p {
+  color: #25283D;
+  margin-bottom: 5px;
+}
+
+.estilo_parrafos {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  margin-left: 20px;
+}
+
 a {
   text-decoration: none;
 }
 
+.boton_personalizado, .botonDestinos {
+  background-color: rgba(7, 190, 184, 0.8784313725);
+  color: white;
+}
+.boton_personalizado:hover, .botonDestinos:hover {
+  background-color: rgba(7, 190, 184, 0.6039215686);
+  color: white;
+}
+
+.contenedor_banner {
+  background-color: rgba(7, 190, 184, 0.8784313725);
+  overflow: hidden;
+}
+
+.banner {
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  padding: 8px 0px;
+  animation: banner 20s linear infinite;
+}
+.banner p {
+  color: white;
+  font-size: small;
+  margin: 0px 10px;
+}
+
+@keyframes banner {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-330px);
+  }
+}
 .mostrar_desktop {
   display: none;
 }
 
 .mostrar_mobile {
   display: block;
-}
-
-.boton_personalizado {
-  background-color: rgba(7, 190, 184, 0.8784313725);
-  color: white;
-}
-.boton_personalizado:hover {
-  background-color: rgba(7, 190, 184, 0.6039215686);
-  color: white;
 }
 
 header {
@@ -70,10 +104,8 @@ li {
   margin: 20px 20px;
   color: #8F3985;
 }
-
-p {
-  color: #25283D;
-  margin-bottom: 20px;
+.menu a:hover {
+  text-decoration: underline wavy #8F3985;
 }
 
 .logo {
@@ -87,7 +119,7 @@ p {
   margin-bottom: 15px;
   font-family: "Gloria Hallelujah", cursive;
   color: #8F3985;
-  font-size: 40px;
+  font-size: 50px;
   text-align: center;
   animation-duration: 3s;
   animation-name: animacionfrase;
@@ -102,6 +134,10 @@ p {
     opacity: 1;
   }
 }
+.carousel_main {
+  width: 100%;
+}
+
 .contenedor_video {
   width: 100%;
   display: flex;
@@ -112,22 +148,53 @@ p {
   padding: 0px 60px;
 }
 
-.botonCarousel {
+.botonCarouselD, .botonCarouselM {
   width: 50px;
-  color: black;
+  align-items: center;
 }
-
-.carousel-control-next {
+.botonCarouselD span, .botonCarouselM span {
+  border-radius: 50%;
+  background-color: black;
   filter: invert(100%);
 }
 
-.carousel-control-prev {
-  filter: invert(100%);
+.botonCarouselM {
+  display: flex;
+  align-items: start;
+  padding-top: 25%;
 }
 
-.listaDestinos {
-  color: #8F3985;
-  font-weight: bold;
+.botonDestinos {
+  font-family: "Gloria Hallelujah", cursive;
+}
+
+.listaPaquetes {
+  font-size: small;
+  color: grey;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.itemPaquetes {
+  width: 110px;
+}
+
+.botonFlotante {
+  color: white;
+  border-radius: 5px;
+  background-color: rgba(7, 190, 184, 0.8784313725);
+  padding: 15px 25px;
+  position: fixed;
+  bottom: 15px;
+  right: 50px;
+  transition: all 300ms ease 0ms;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  z-index: 99;
+}
+.botonFlotante:hover {
+  background-color: #8F3985;
+  box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.3);
+  transform: translateY(-7px);
 }
 
 .mapa {
@@ -177,12 +244,17 @@ footer {
   .mostrar_desktop {
     display: block;
   }
+  .mostrar_mobile {
+    display: none;
+  }
   .redes_icono {
     width: 20px;
     height: 20px;
   }
-  .mostrar_mobile {
-    display: none;
+}
+@media screen and (min-width: 1280px) {
+  main {
+    padding: 0 10%;
   }
 }
 

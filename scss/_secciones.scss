@@ -1,27 +1,29 @@
+// Se aplican estilos particulares para cada sección
 
-// Se aplican estilos particulares de cada sección//
-
-//*****Mixin*****//
+// Mixin general para aplicar width y height
 
 @mixin widthHeight ($width, $height) {
     width: $width;
     height: $height;
 }
 
-//*****Inicio*****//
 
+//***** SECCION INICIO *****//
+
+// formato del titulo bon voyage
 .estilofrase {
 	padding: 15px;
 	margin-bottom: 15px;
 	font-family: $font-family_2;
 	color: $color_1;
-	font-size: 40px;
+	font-size: 50px;
 	text-align: center;
 	animation-duration: 3s;
 	animation-name: animacionfrase;
 	animation-iteration-count: infinite;
 }
 
+// animacion
 @keyframes animacionfrase {
 	0% {
 		opacity: 0;
@@ -31,8 +33,13 @@
 	}
 }
 
+// carousel de imagenes
+.carousel_main {
+	width: 100%;
+}
 
-//*****Quienes Somos*****//
+
+//***** SECCION QUIENES SOMOS *****//
 
 .contenedor_video {
 	width: 100%;
@@ -41,28 +48,71 @@
 }
 
 
-//*****Paquetes*****//
+//***** SECCION PAQUETES *****//
 
 .contenedor_itemCarousel {
 	padding: 0px 60px;
 }
-.botonCarousel {
+
+// botón carousel version desktop
+.botonCarouselD {
 	width: 50px;
-	color: $color_4;
+	align-items: center;
+	span {
+		border-radius: 50%;
+		background-color: black;
+		filter: invert(100%);
+	}
 }
-.carousel-control-next {
-	filter: invert(100%);
+
+// botón carousel version mobile
+.botonCarouselM {
+	@extend .botonCarouselD;
+	display: flex;
+	align-items: start;
+	padding-top: 25%;
 }
-.carousel-control-prev {
-	filter: invert(100%);
+
+// botones link a destinos
+.botonDestinos {
+	@extend .boton_personalizado;
+	font-family: $font-family_2;
 }
-.listaDestinos {
-	color: $color_1;
-	font-weight: bold;
+
+// todos los items que incluye cada paquete
+.listaPaquetes {
+	font-size: small;
+	color: $color_5;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+// items individuales de lo que incuye cada paquete
+.itemPaquetes{
+	width: 110px;
+}
+
+// boton flotante que lleva a la parte superior
+.botonFlotante {
+	color: $color_3;
+	border-radius: 5px;
+	background-color: $background-color_2;
+	padding: 15px 25px;
+	position: fixed;
+	bottom: 15px;
+	right: 50px;
+	transition: all 300ms ease 0ms;
+	box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+	z-index: 99;
+	&:hover {
+		background-color: $background-color_4;
+		box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.3);
+		transform: translateY(-7px);
+	}
 }
 
 
-//*****Sucursales*****//
+//***** SECCION SUCURSALES *****//
 
 .mapa {
 	@include widthHeight(100%,200px);
@@ -73,13 +123,14 @@
 }
 
 
-//*****Contacto*****//
+//***** SECCION CONTACTO *****//
 
 .estilo_formulario {
     padding: 20px;
     border: 3px solid #07BEB8;
     border-radius: 20px;
 }
+
 .imagen_contacto {
     @include widthHeight(400px,400px);
 }

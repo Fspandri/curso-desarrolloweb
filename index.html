@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="icon" href="img/inicio/favicon.png"/>
+    <link rel="icon" href="img/inicio/favicon.png" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bon Voyage</title>
@@ -12,30 +12,29 @@
     <meta name="description" content="Tu agencia de viajes. Tenemos los mejores paquetes para que recorras el mundo sin pagar de más">
 
     <!-- CSS Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    
-    <!-- Libreria Animate -->
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
-    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
     <!-- CCS -->
     <link rel="stylesheet" href="css/estilo.css">
 </head>
 
 <body>
     <header>
-        
-        <!-- MENU BOOTSTRAP -->
 
+        <!-- BANNER -->
+        <div class="contenedor_banner">
+            <div class="banner">
+                <img src="img/inicio/fuego.png" alt="Fuego" width="22" height="22">
+                <p>6 Cuotas sin interés en Paquetes Nacionales</p>
+                <img src="img/inicio/fuego.png" alt="Fuego" width="22" height="22">
+            </div>
+        </div>
+
+        <!-- MENU NAV -->
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
                 <a class="navbar-brand" href="index.html"><img src="img/inicio/logo.png" class="logo" alt="Logo de Bon Voyage"></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
@@ -55,10 +54,10 @@
                         </li>
                     </ul>
                     <form class="d-flex" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                        <input class="form-control me-2 shadow-none border border-secondary-subtle" type="search" placeholder="Buscar" aria-label="Search">
                         <button class="btn boton_personalizado" type="submit">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
-                                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
                             </svg>
                         </button>
                     </form>
@@ -70,7 +69,7 @@
     </header>
 
     <main>
-        <h1 class="estilofrase">“Pies para qué los quiero si tengo alas para volar”</h1>
+        <h1 class="estilofrase">“¡Bienvenidos a Bon Voyage!”</h1>
 
         <!-- CAROUSEL -->
         <div class="container">
@@ -79,20 +78,25 @@
                     <div id="carouselExampleCaptions" class="carousel slide carousel_main" data-bs-ride="carousel">
                         <!-- Botones inferiores carousel -->
                         <div class="carousel-indicators">
-                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+                                class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+                                aria-label="Slide 4"></button>
                         </div>
                         <!-- Imagenes carousel -->
                         <div class="carousel-inner">
                             <!-- imagen 1 -->
                             <div class="carousel-item active" data-bs-interval="2000">
-                                <img src="img/inicio/australia.jpg" class="d-block w-100" alt="Imagen Australia">
+                                <img src="img/inicio/australia.jpg" class="d-block w-100" alt="Imagen de Australia">
                             </div>
                             <!-- imagen 2 -->
                             <div class="carousel-item" data-bs-interval="2000">
-                                <img src="img/inicio/torreeiffel.jpg" class="d-block w-100" alt="Imagen de Torre Eiffel">
+                                <img src="img/inicio/torreeiffel.jpg" class="d-block w-100"
+                                    alt="Imagen de Torre Eiffel">
                             </div>
                             <!-- imagen 3 -->
                             <div class="carousel-item" data-bs-interval="2000">
@@ -104,11 +108,13 @@
                             </div>
                         </div>
                         <!-- Botones laterales carousel -->
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                            data-bs-slide="prev">
                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                             <span class="visually-hidden">Previous</span>
                         </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                            data-bs-slide="next">
                             <span class="carousel-control-next-icon" aria-hidden="true"></span>
                             <span class="visually-hidden">Next</span>
                         </button>
@@ -117,20 +123,16 @@
             </div>
         </div>
 
-        
-        <p class="lead p-5">Nulla id mauris eu tortor lacinia suscipit et eu ipsum. In tincidunt metus erat, vitae
-        sodales odio ultricies ut. In venenatis ex ut mi fringilla, a mattis urna tempus. Curabitur euismod tortor
-        tellus, quis maximus diam hendrerit et. Curabitur eget justo at arcu scelerisque venenatis. Vivamus ornare
-        mattis dignissim. Maecenas eget ultrices felis. Nulla facilisis tempus magna, non pellentesque tortor
-        sodales in. Aliquam erat volutpat. Curabitur posuere semper gravida. Pellentesque viverra tortor risus,
-        pulvinar lacinia lorem sagittis a. Aliquam porttitor augue a pretium scelerisque. In cursus tincidunt metus
-        a ultricies. Donec fringilla sapien at massa sodales laoreet. Nulla vestibulum ut erat non ornare.</p>
+        <p class="estilo_parrafos d-flex justify-content-center text-center">Aquí encontrarás información detallada y actualizada sobre destinos turísticos en todo el mundo. Ya sea que estés buscando aventuras en la naturaleza, descanso en una playa paradisíaca, explorar ciudades históricas o disfrutar de la deliciosa gastronomía local.</p>
+        <p class="estilo_parrafos d-flex justify-content-center">Espero que te inspire y te ayude a planificar tus próximas aventuras.</p>
+        <p class="estilo_parrafos d-flex justify-content-center fw-bold">¡Gracias por visitar Bon Voyage! </p>
+
     </main>
 
     <footer>
-        
+
         <!-- REDES -->
-        
+
         <div class="redes d-flex justify-content-center">
             <!-- WhatsApp -->
             <a class="redes_link" href="https://web.whatsapp.com/" target="_blank">
@@ -139,7 +141,7 @@
                     <p class="mostrar_desktop ms-1">WhatsApp</p>
                 </div>
             </a>
-            
+
             <!-- Instagram -->
             <a class="redes_link" href="https://www.instagram.com/" target="_blank">
                 <div class="d-flex">
@@ -147,7 +149,7 @@
                     <p class="mostrar_desktop ms-1">Instagram</p>
                 </div>
             </a>
-            
+
             <!-- Facebook -->
             <a class="redes_link" href="https://www.facebook.com/" target="_blank">
                 <div class="d-flex">
@@ -155,7 +157,7 @@
                     <p class="mostrar_desktop ms-1">Facebook</p>
                 </div>
             </a>
-            
+
             <!-- Twitter -->
             <a class="redes_link" href="https://twitter.com/" target="_blank">
                 <div class="d-flex">
@@ -164,16 +166,13 @@
                 </div>
             </a>
         </div>
-        
+
         <p>Todos los derechos reservados.</p>
-    
+
     </footer>
-    
+
     <!-- Script de Bootstrap -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-        crossorigin="anonymous">
-    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 
 </body>
 

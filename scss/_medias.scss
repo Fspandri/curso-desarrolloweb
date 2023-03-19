@@ -1,12 +1,23 @@
 @media screen and (min-width: 720px) {
+	// visible solo para version desktop
 	.mostrar_desktop {
 		display: block;
-	}
-	.redes_icono {
-		width: 20px;
-		height: 20px;
 	}
 	.mostrar_mobile {
 		display: none;
 	}
+
+	// tamaño iconos de contacto footer
+	.redes_icono {
+		width: 20px;
+		height: 20px;
+	}
 }
+
+@media screen and (min-width: 1280px) {
+	// padding lateral para pantallas grandes
+	main {
+		padding: 0 10%;
+	}
+}
+	

@@ -12,8 +12,7 @@
     <meta name="description" content="Vení a visitarnos a nuestras sucursales de zona norte y CABA">
 
     <!-- CSS Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 
     <!-- Libreria Animate -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
@@ -26,15 +25,20 @@
 <body>
     <header>
 
-        <!-- MENU BOOTSTRAP -->
+        <!-- BANNER -->
+        <div class="contenedor_banner">
+            <div class="banner">
+                <img src="../img/inicio/fuego.png" alt="Fuego" width="22" height="22">
+                <p>6 Cuotas sin interés en Paquetes Nacionales</p>
+                <img src="../img/inicio/fuego.png" alt="Fuego" width="22" height="22">
+            </div>
+        </div>
 
+        <!-- MENU NAV -->
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
-                <a class="navbar-brand" href="../index.html"><img src="../img/inicio/logo.png" class="logo"
-                        alt="Logo de Bon Voyage"></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
+                <a class="navbar-brand" href="../index.html"><img src="../img/inicio/logo.png" class="logo" alt="Logo de Bon Voyage"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
@@ -54,12 +58,10 @@
                         </li>
                     </ul>
                     <form class="d-flex" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                        <input class="form-control me-2 shadow-none border border-secondary-subtle" type="search" placeholder="Buscar" aria-label="Search">
                         <button class="btn boton_personalizado" type="submit">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                class="bi bi-search" viewBox="0 0 16 16">
-                                <path
-                                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
                             </svg>
                         </button>
                     </form>
@@ -75,38 +77,35 @@
 
         <div class="container">
             <div class="row">
+
+                <!-- SUCURSAL CABA -->
                 <div class="col-md-6 col-xs-12 p-3 mapa:hover">
                     <div>
                         <h2>CABA</h2>
                         <P>Echeverría 2340, Belgrano</P>
-                        <iframe class="mapa"
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3285.63953367844!2d-58.457388885610555!3d-34.562681080470135!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb5d3c8877289%3A0xb2e051c58971b8c8!2sEcheverr%C3%ADa%202340%2C%20C1428DRP%20CABA!5e0!3m2!1ses!2sar!4v1674401693019!5m2!1ses!2sar"
-                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3285.63953367844!2d-58.457388885610555!3d-34.562681080470135!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb5d3c8877289%3A0xb2e051c58971b8c8!2sEcheverr%C3%ADa%202340%2C%20C1428DRP%20CABA!5e0!3m2!1ses!2sar!4v1674401693019!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                 </div>
 
+                <!-- SUCURSAL TIGRE -->
                 <div class="col-md-6 col-xs-12 p-3 mapa:hover">
                     <div>
                         <h2>GBA Norte</h2>
                         <P>Av. Cazón 1157, Tigre</P>
-                        <iframe class="mapa"
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3291.018461277315!2d-58.57796198561559!3d-34.426286180505834!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bca598f4a7970d%3A0x704496562ac57898!2sAv.%20Caz%C3%B3n%201157%2C%20B1648%20Tigre%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1674401775355!5m2!1ses!2sar"
-                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3291.018461277315!2d-58.57796198561559!3d-34.426286180505834!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bca598f4a7970d%3A0x704496562ac57898!2sAv.%20Caz%C3%B3n%201157%2C%20B1648%20Tigre%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1674401775355!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                 </div>
             </div>
 
+            <!-- IMAGEN INFERIOR -->
             <div class="col-md-12">
                 <div class="d-flex justify-content-center">
                     <img src="../img/sucursales/imagensucursales.jpg" class="w-60 mostrar_desktop" alt="Imagen con las principales maravillas del mundo">
                 </div>
             </div>
-
         </div>
-
     </main>
+
 
     <footer>
 
@@ -151,11 +150,7 @@
     </footer>
 
     <!-- Script de Bootstrap -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
-        </script>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 
 </body>
-
 </html>

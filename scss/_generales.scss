@@ -1,26 +1,35 @@
-//*****Reset y generales*****//
+
+// reseteo de formato
 
 * {
 	margin: 0;
 	padding: 0;
 }
+
+
+// generales
+
 body {
 	font-family: $font-family_1;
+	font-size: larger;
 	display: flex;
 	flex-direction: column;
 	min-height: 100vh;
 }
+
 main {
 	margin: 20px;
 	bottom: 20px;
 }
-.carousel_main {
-	width: 95%;
-}
+
+
+// titulos y parrafos
+
 h1 {
 	margin-bottom: 20px;
 	font-size: 30px;
 }
+
 h2 {
 	margin-bottom: 20px;
 	font-size: 25px;
@@ -28,16 +37,27 @@ h2 {
 	padding-top: 40px;
 	font-weight: bold;
 }
+
+p {
+	color: $color_2;
+	margin-bottom: 5px;
+}
+
+.estilo_parrafos {
+	margin-top: 40px;
+	margin-bottom: 40px;
+	margin-left: 20px;	
+}
+
+
+// links
+
 a {
 	text-decoration: none;
 }
 
-.mostrar_desktop {
-	display: none;
-}
-.mostrar_mobile {
-	display: block;
-}
+
+// botones
 
 .boton_personalizado {
 	background-color: $background-color_2;
@@ -47,4 +67,44 @@ a {
 		color: $color_3;
 	}
 }
-    
+
+
+// banner
+
+.contenedor_banner {
+	background-color: $background-color_2;
+	overflow: hidden;
+}
+
+.banner {
+	font-weight: bold;
+	display: flex;	
+	align-items: center;
+	padding: 8px 0px;
+	animation: banner 20s linear infinite;
+	p {
+		color: $color_3;
+		font-size: small;
+		margin: 0px 10px;
+	}
+}
+
+@keyframes banner {
+	0% {
+		transform: translateX(100%);
+	}
+	100% {
+		transform: translateX(-330px);
+	}
+}
+
+
+// selector de visible para version desktop o mobile. Usado para media query
+
+.mostrar_desktop {
+	display: none;
+}
+
+.mostrar_mobile {
+	display: block;
+}
